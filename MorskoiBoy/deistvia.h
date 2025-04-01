@@ -7,13 +7,13 @@ class deistvia:public pole
 	void vodHoda();
 
 	void vistrel();
-	void corobli();
+	void Corobli();
 
 
 private:
 	int HodX;
 	int HodY;
-	int corabli[4];
+	int corabli[4]{4,3,2,1};
 	int corabl = 0;
 	int povorot = 0;
 };
