@@ -59,7 +59,7 @@ void pole::poleProtivnica()
 
 void pole::zapolniMeni(int HodX, int HodY, double zapolnitel)
 {
-	Pole[HodX][HodY] = zapolnitel
+	Pole[HodX][HodY] = zapolnitel;
 
 }
 
