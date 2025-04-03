@@ -3,6 +3,7 @@
 #include "pole.h"
 class deistvia:public pole
 {public:
+	int paluba[4]{ 0,0,0,0 };
 
 	void vodHoda();
 

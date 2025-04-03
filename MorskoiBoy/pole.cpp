@@ -87,7 +87,7 @@ void pole::poleProtivnica()
 			else if (Pole[x][y] == 99) {
 				std::cout << "[  ]";
 			}
-			else if (x > 0 && Pole[x][y] < 10) {
+			else if (x > 0 && Pole[x][y] < 10 && Pole[x][y] > 0) {
 				if (x < 10) {
 					std::cout << "[" << Pole[x][y] << " ]";
 				}

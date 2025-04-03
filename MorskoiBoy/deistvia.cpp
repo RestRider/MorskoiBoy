@@ -28,45 +28,61 @@ void deistvia::vodHoda()
 void deistvia::vistrel()  
 {
 	while (true) {
-		std::cout << "\nкуда вы хотите выстрелить:";
+		std::cout << "\nкуда вы хотите выстрелить";
 		deistvia::vodHoda();
 		if (pole::delusi(HodX, HodY) == 11 ) {
 			std::cout << "\n Попал";
-			sleep(2);
+			sleep(1);
+			paluba[0] += 1;
 			pole::zapolniMeni(HodX, HodY, -11);
+			sleep(1);
+			system("cls");
+			pole::poleProtivnica();
 			std::cout << "\nстреляй ещё\n";
-			sleep(2);
+			sleep(1);
 		}
 		else if (pole::delusi(HodX, HodY) == 12) {
 			std::cout << "\n Попал";
-			sleep(2);  
+			sleep(1);  
+			paluba[1] += 1;
 			pole::zapolniMeni(HodX, HodY, -12);
+			sleep(1);
+			system("cls");
+			pole::poleProtivnica();
 			std::cout << "\nстреляй ещё\n";
-			sleep(2);
+			sleep(1);
 		}
 		else if (pole::delusi(HodX, HodY) == 13) {
 			std::cout << "\n Попал";
-			sleep(2);
+			sleep(1);
+			paluba[2] += 1;
 			pole::zapolniMeni(HodX, HodY, -13);
+			sleep(1);
+			system("cls");
+			pole::poleProtivnica();
 			std::cout << "\nстреляй ещё\n";
-			sleep(2);
+			sleep(1);
 		}
 		else if (pole::delusi(HodX, HodY) == 14) {
 			std::cout << "\n Попал";
-			sleep(2);
+			sleep(1);
+			paluba[3] += 1;
 			pole::zapolniMeni(HodX, HodY, -14);
+			sleep(1);
+			system("cls");
+			pole::poleProtivnica();
 			std::cout << "\nстреляй ещё\n";
-			sleep(2);
+			sleep(1);
 		}
 		else if (pole::delusi(HodX, HodY) == 0) {
 			std::cout << "\n мимо";
-			sleep(2);
+			sleep(1);
 			pole::zapolniMeni(HodX, HodY, 66);
 			break;
 		}
 		else if (pole::delusi(HodX, HodY) == -11 && pole::delusi(HodX, HodY) == -12 && pole::delusi(HodX, HodY) == -13 && pole::delusi(HodX, HodY) == -14) {
 			std::cout << "\nсюда стрелять нельзя\n     ты уже стрелял";
-			sleep(2);
+			sleep(1);
 		}
 	}
 }
